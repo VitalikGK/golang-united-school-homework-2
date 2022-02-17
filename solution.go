@@ -15,13 +15,13 @@ import (
 
 type yourTypeNameHere int
 
-func CalcSquare(sideLen float64, sidesNum yourTypeNameHere) float64 {
+const (
+	SidesTriangle yourTypeNameHere = 3
+	SidesSquare   yourTypeNameHere = 4
+	SidesCircle   yourTypeNameHere = 0
+)
 
-	const (
-		SidesTriangle yourTypeNameHere = 3
-		SidesSquare   yourTypeNameHere = 4
-		SidesCircle   yourTypeNameHere = 0
-	)
+func CalcSquare(sideLen float64, sidesNum yourTypeNameHere) float64 {
 
 	if sidesNum == SidesTriangle {
 
